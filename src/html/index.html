@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script type = "text/javascript" src="../functions/getGcode.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<link rel="stylesheet" type="text/css" href="./css/wallpaper.css" media="screen" />
+
+<style>
+  .button_red {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #F44949;
+  }
+  .button_green {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #4CAF50;
+  }
+  .text_center {
+    text-align: center
+  }
+  .text_bottom {
+    position: fixed;
+    bottom: 0;
+  }
+</style>
+
+<body>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+
+  <h1 style="color:red" face="Californian FB" class="text_center">LaserScan</h1>
+  <p style="color:white" face="Californian FB">Haz click en alguna de las siguientes opciones para empezar:<br></p>
+  <input class="button_red" type = "button" onclick = "gcode()" value = "Cargar imagen">
+
+  <p style="color:white" class="text_bottom"><strong>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+  </strong></p>
+</body>
+
+</html>
